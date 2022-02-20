@@ -16,6 +16,8 @@ source : kubernetes.io
 ## Azure Ideal Topology
 ![kubernetes.azure-ideal-screenshot](docs/images/azure_k8s_HA.png)
 
+Because we don’t have 6 VMs for this simulation and only have 5 VMs, we use 1 of controller as worker, below is the topology, we should be able achieve 3 etcd and 3 rook ceph hosts as cluster to have quorum since we want to have HA, and the procedure should be similar :).
+
 ## Azure Topology Use As Alternative
 ![kubernetes.azure-screenshot](docs/images/azure_k8s_HA_minus.png)
 
