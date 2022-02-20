@@ -1,24 +1,30 @@
 # Prerequisites
 
-## Google Cloud Platform
+## Microsoft Azure
 
-This tutorial leverages the [Google Cloud Platform](https://cloud.google.com/) to streamline provisioning of the compute infrastructure required to bootstrap a Kubernetes cluster from the ground up. [Sign up](https://cloud.google.com/free/) for $300 in free credits.
+This tutorial leverages the [Microsoft Azure](https://azure.microsoft.com) to streamline provisioning of the compute infrastructure required to bootstrap a Kubernetes cluster from the ground up.
 
-[Estimated cost](https://cloud.google.com/products/calculator#id=873932bc-0840-4176-b0fa-a8cfd4ca61ae) to run this tutorial: $0.23 per hour ($5.50 per day).
+## Microsoft Azure Cloud Platform SDK
 
-> The compute resources required for this tutorial exceed the Google Cloud Platform free tier.
+### Install the Microsoft Azure CLI 2.0
 
-## Google Cloud Platform SDK
+Follow the Microsoft Azure CLI 2.0 [documentation](https://github.com/azure/azure-cli#installation) to install and configure the `az` command line utility.
 
-### Install the Google Cloud SDK
+Verify the Microsoft Azure CLI 2.0 version is 2.1.0 or higher:
 
-Follow the Google Cloud SDK [documentation](https://cloud.google.com/sdk/) to install and configure the `gcloud` command line utility.
-
-Verify the Google Cloud SDK version is 338.0.0 or higher:
-
+```shell
+az --version
 ```
-gcloud version
+
+### Create a default Resource Group in a location
+
+The guide assumes you've installed the [Azure CLI 2.0](https://github.com/azure/azure-cli#installation), and will be creating resources in the `eastus2` location, within a resource group named `kubernetes`. To create this resource group, simply run the following command:
+
+```shell
+az group create -n kubernetes -l eastus2
 ```
+
+> Use the `az account list-locations` command to view additional locations.
 
 ## Running Commands in Parallel with tmux
 
@@ -30,4 +36,4 @@ gcloud version
 
 > Enable synchronize-panes by pressing `ctrl+b` followed by `shift+:`. Next type `set synchronize-panes on` at the prompt. To disable synchronization: `set synchronize-panes off`.
 
-Next: [Part 1 - GCP login and Networking](02-part-01.md)
+Next: [Part 1 - Azure login and Networking](02-part-01.md)
