@@ -35,7 +35,7 @@ This tutorial assumes you have access to the [Azure](https://azure.microsoft.com
 * [Part 6 - Bootstrapping the Kubernetes Worker Nodes](docs/07-part-06.md)
 * [Part 7 - Istio, helm and Rancher](docs/08-part-07.md)
 * [Part 8 - Rook Ceph](docs/09-part-08.md)
-* [Part 9 - Getting access to Rancher](docs/10-part-9.md)
+* [Part 9 - Getting access to Rancher](docs/10-part-09.md)
 * [Part 10 - Getting access to Grafana](docs/11-part-10.md)
 * [Part 11 - Getting access to Istio Kiali Dashboard](docs/12-part-11.md)
 * [Part 12 - Testing create PVC & POD](docs/13-part-12.md)
